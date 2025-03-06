@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Page</title>
+    <title>Vertical Image Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .text {
+            margin: 15px 0;
+            font-size: 24px; /* Increased text size */
+            font-weight: bold;
+            color: red; /* Changed text color to red */
+        }
+    </style>
 </head>
 <body>
-    <img src="lazar.png" alt="Your Image" style="max-width: 100%; height: auto;">
+
+    <div class="container">
+        <img src="image1.jpg" alt="Image 1">
+        <div class="text">This is the first image description</div>
+
+        <img src="image2.jpg" alt="Image 2">
+        <div class="text">This is the second image description</div>
+
+        <img src="image3.jpg" alt="Image 3">
+        <div class="text">This is the third image description</div>
+    </div>
+
 </body>
 </html>
